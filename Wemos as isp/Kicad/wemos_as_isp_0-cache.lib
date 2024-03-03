@@ -1,0 +1,152 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Device_LED
+#
+DEF Device_LED D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# MCU_Module_WeMos_D1_mini
+#
+DEF MCU_Module_WeMos_D1_mini U 0 20 Y Y 1 F N
+F0 "U" 150 750 50 H V L CNN
+F1 "MCU_Module_WeMos_D1_mini" 50 -750 50 H V L CNN
+F2 "Module:WEMOS_D1_mini_light" 0 -1150 50 H I C CNN
+F3 "" -1850 -1150 50 H I C CNN
+$FPLIST
+ WEMOS*D1*mini*
+$ENDFPLIST
+DRAW
+S -300 700 300 -700 1 1 10 f
+X ~RST 1 -400 400 100 R 50 50 1 1 I
+X GND 10 0 -800 100 U 50 50 1 1 W
+X D4 11 400 0 100 L 50 50 1 1 B
+X D3 12 400 100 100 L 50 50 1 1 B
+X SDA/D2 13 400 200 100 L 50 50 1 1 B
+X SCL/D1 14 400 300 100 L 50 50 1 1 B
+X RX 15 -400 100 100 R 50 50 1 1 I
+X TX 16 -400 0 100 R 50 50 1 1 O
+X A0 2 400 500 100 L 50 50 1 1 I
+X D0 3 400 400 100 L 50 50 1 1 B
+X SCK/D5 4 400 -100 100 L 50 50 1 1 B
+X MISO/D6 5 400 -200 100 L 50 50 1 1 B
+X MOSI/D7 6 400 -300 100 L 50 50 1 1 B
+X CS/D8 7 400 -400 100 L 50 50 1 1 B
+X 3V3 8 100 800 100 D 50 50 1 1 w
+X 5V 9 -100 800 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# dk_Embedded-Microcontrollers_ATTINY84A-PU
+#
+DEF dk_Embedded-Microcontrollers_ATTINY84A-PU U 0 40 Y Y 1 F N
+F0 "U" -250 500 60 H V L CNN
+F1 "dk_Embedded-Microcontrollers_ATTINY84A-PU" 250 450 60 V V R CNN
+F2 "digikey-footprints:DIP-14_W3mm" 200 200 60 H I L CNN
+F3 "http://ww1.microchip.com/downloads/en/DeviceDoc/8183s.pdf" 200 300 60 H I L CNN
+F4 "ATTINY84A-PU-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "ATTINY84A-PU" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "Embedded - Microcontrollers" 200 700 60 H I L CNN "Family"
+F8 "http://ww1.microchip.com/downloads/en/DeviceDoc/8183s.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/microchip-technology/ATTINY84A-PU/ATTINY84A-PU-ND/2774082" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC MCU 8BIT 8KB FLASH 14DIP" 200 1000 60 H I L CNN "Description"
+F11 "Microchip Technology" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -250 450 200 -750 0 1 0 f
+X VCC 1 100 600 150 D 50 50 1 1 W
+X PA3 10 -400 -400 150 R 50 50 1 1 B
+X PA2 11 -400 -500 150 R 50 50 1 1 B
+X PA1 12 -400 -600 150 R 50 50 1 1 B
+X PA0 13 -400 -700 150 R 50 50 1 1 B
+X GND 14 100 -900 150 U 50 50 1 1 W
+X PB0 2 -400 400 150 R 50 50 1 1 B
+X PB1 3 -400 300 150 R 50 50 1 1 B
+X PB3 4 -400 100 150 R 50 50 1 1 B
+X PB2 5 -400 200 150 R 50 50 1 1 B
+X PA7 6 -400 0 150 R 50 50 1 1 B
+X PA6 7 -400 -100 150 R 50 50 1 1 B
+X PA5 8 -400 -200 150 R 50 50 1 1 B
+X PA4 9 -400 -300 150 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# dk_Embedded-Microcontrollers_ATTINY85-20PU
+#
+DEF dk_Embedded-Microcontrollers_ATTINY85-20PU U 0 1 Y Y 1 F N
+F0 "U" -112 340 60 H V L CNN
+F1 "dk_Embedded-Microcontrollers_ATTINY85-20PU" 120 -450 60 H V L CNN
+F2 "digikey-footprints:DIP-8_W7.62mm" 200 200 60 H I L CNN
+F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en589894" 200 300 60 H I L CNN
+F4 "ATTINY85-20PU-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "ATTINY85-20PU" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "Embedded - Microcontrollers" 200 700 60 H I L CNN "Family"
+F8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en589894" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/microchip-technology/ATTINY85-20PU/ATTINY85-20PU-ND/735469" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC MCU 8BIT 8KB FLASH 8DIP" 200 1000 60 H I L CNN "Description"
+F11 "Microchip Technology" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -100 300 200 -400 0 1 0 f
+X PB5 1 -200 -300 100 R 50 50 1 1 B
+X PB3 2 -200 -100 100 R 50 50 1 1 B
+X PB4 3 -200 -200 100 R 50 50 1 1 B
+X GND 4 100 -500 100 U 50 50 1 1 W
+X PB0 5 -200 200 100 R 50 50 1 1 B
+X PB1 6 -200 100 100 R 50 50 1 1 B
+X PB2 7 -200 0 100 R 50 50 1 1 B
+X VCC 8 100 400 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# power_PWR_FLAG
+#
+DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "power_PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+#End Library
