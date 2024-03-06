@@ -6,6 +6,9 @@
 
 Wemos as ISP is an interface card that plugs into Wemos mini board ESP8266, to allow the programming of 8-pin ATtiny 25/45/85 controllers and 14-pin ATtiny 24/44/84 controllers
 
+## Video tutorial
+https://youtu.be/ktZU3sbenOU?si=Dj4A4wVRVGfgxN6n <br>
+
 ## Hardware
 The electronic board project files are found here: <br>
 https://github.com/Green-bms/Wemos-as-ISP/tree/master/Wemos%20as%20isp/Kicad <br>
